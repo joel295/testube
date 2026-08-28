@@ -1,12 +1,17 @@
 
 import { enableProdMode, provideZoneChangeDetection } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { inject as injectVercelAnalytics } from '@vercel/analytics';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import { browserTracingIntegration, init } from '@sentry/angular';
 import { VERSION } from './environments/version';
+
+injectVercelAnalytics({
+  mode: environment.production ? 'production' : 'development',
+});
 
 init({
   dsn: "https://aa6ecbe83cae4b7789f5b9477dbad980@o476457.ingest.sentry.io/5516119",
