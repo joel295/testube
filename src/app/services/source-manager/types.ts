@@ -90,7 +90,7 @@ export const DEFAULT_SOURCES: Map<string, Source> = new Map([
     {
       name: 'Apple TV+',
       category: CategoryType.Streaming,
-      url: 'https://tv.apple.com',
+      url: 'https://tv.apple.com/au',
       colors: {
         dark: '#121212',
         light: '#121212'
@@ -126,7 +126,7 @@ export const DEFAULT_SOURCES: Map<string, Source> = new Map([
     {
       name: 'Plex',
       category: CategoryType.Personal,
-      url: 'https://app.plex.tv/desktop',
+      url: 'http://media-server.jamnapari-goanna.ts.net:32400',
       colors: {
         dark: '#1f2326',
         light: '#1f2326'
