@@ -71,7 +71,10 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "options": {
-            "buildTarget": "testube:build"
+            "buildTarget": "testube:build",
+            "headers": {
+              "X-Robots-Tag": "noindex, nofollow, nosnippet, noarchive"
+            }
           },
           "configurations": {
             "production": {
