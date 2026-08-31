@@ -35,40 +35,6 @@ export interface Category {
 export const DEFAULT_SOURCES: Map<string, Source> = new Map([
   // STREAMING
   [
-    'youtube',
-    {
-      name: 'YouTube',
-      category: CategoryType.Streaming,
-      url: 'https://youtube.com',
-      colors: {
-        dark: '#c2c2c2',
-        light: '#c2c2c2'
-      },
-      logos: {
-        dark: 'https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg',
-        light: 'https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg'
-      },
-      visible: true
-    }
-  ],
-  [
-    'disneyplus',
-    {
-      name: 'Disney+',
-      category: CategoryType.Streaming,
-      url: 'https://disneyplus.com',
-      colors: {
-        dark: '#040814',
-        light: '#040814'
-      },
-      logos: {
-        dark: 'https://www.logo.wine/a/logo/Disney%2B/Disney%2B-White-Logo.wine.svg',
-        light: 'https://www.logo.wine/a/logo/Disney%2B/Disney%2B-White-Logo.wine.svg',
-      },
-      visible: true
-    }
-  ],
-  [
     'prime',
     {
       name: 'Prime Video',
@@ -81,23 +47,6 @@ export const DEFAULT_SOURCES: Map<string, Source> = new Map([
       logos: {
         dark: 'https://m.media-amazon.com/images/G/01/digital/video/web/logo-min-remaster.png',
         light: 'https://m.media-amazon.com/images/G/01/digital/video/web/logo-min-remaster.png'
-      },
-      visible: true
-    }
-  ],
-  [
-    'appletv',
-    {
-      name: 'Apple TV+',
-      category: CategoryType.Streaming,
-      url: 'https://tv.apple.com/au',
-      colors: {
-        dark: '#121212',
-        light: '#121212'
-      },
-      logos: {
-        dark: 'https://www.apple.com/tv-pr/about-assets/images/logo/Apple_TV_Plus_logo_About.png.large.png',
-        light: 'https://www.apple.com/tv-pr/about-assets/images/logo/Apple_TV_Plus_logo_About.png.large.png'
       },
       visible: true
     }
@@ -119,14 +68,12 @@ export const DEFAULT_SOURCES: Map<string, Source> = new Map([
       visible: true
     }
   ],
-
-  // PERSONAL
   [
     'plex',
     {
       name: 'Plex',
-      category: CategoryType.Personal,
-      url: 'http://media-server.jamnapari-goanna.ts.net:32400',
+      category: CategoryType.Streaming,
+      url: 'https://app.plex.tv/desktop',
       colors: {
         dark: '#1f2326',
         light: '#1f2326'
